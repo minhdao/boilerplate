@@ -8,7 +8,8 @@
     "serve": "live-server public",
     "build-bb": "babel src/index.js -o public/scripts/bundle.js --presets env --watch",
     "dev-server": "webpack-dev-server --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "test": "webpack src/tests/*.test.js -o src/tests/bundle/tests.js --mode development && mocha src/tests/bundle/tests.js"
   },
   "author": "mdao",
   "license": "ISC",
