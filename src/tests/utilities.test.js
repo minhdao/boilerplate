@@ -1,11 +1,11 @@
-const utilities = require('./../utilities.js');
+import { add } from './../utilities.js';
 
-describe('utilities.js add()', () => {
+describe('utilities.js add', () => {
   it('should return correct sum of two positive numbers', () => {
     let x = 12;
     let y = 43;
     let expectedResult = 55;
-    let result = utilities.add(12, 43);
+    let result = add(12, 43);
     if (result !== expectedResult) {
       throw new Error(`expected ${expectedResult} but got ${result}`);
     }
@@ -15,7 +15,7 @@ describe('utilities.js add()', () => {
     let x = -10;
     let y = -32;
     let expectedResult = -42;
-    let result = utilities.add(x, y);
+    let result = add(x, y);
     if (result !== expectedResult) {
       throw new Error(`expected ${expectedResult} but got ${result}`);
     }
@@ -25,7 +25,7 @@ describe('utilities.js add()', () => {
     let x = 13;
     let y = -32;
     let expectedResult = -19;
-    let result = utilities.add(x, y);
+    let result = add(x, y);
     if (result !== expectedResult) {
       throw new Error(`expected ${expectedResult} but got ${result}`);
     }
@@ -35,7 +35,7 @@ describe('utilities.js add()', () => {
     let x = 'a';
     let y = 12;
     let expectedResult = 'can only add numbers.';
-    let result = utilities.add(x, y);
+    let result = add(x, y);
     if (result !== expectedResult) {
       throw new Error(`expected ${expectedResult} but got ${result}`);
     }
