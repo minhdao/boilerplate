@@ -81,14 +81,14 @@
 "use strict";
 
 
-var utilities = __webpack_require__(/*! ./../utilities.js */ "./src/utilities.js");
+var _utilities = __webpack_require__(/*! ./../utilities.js */ "./src/utilities.js");
 
-describe('utilities.js add()', function () {
+describe('utilities.js add', function () {
   it('should return correct sum of two positive numbers', function () {
     var x = 12;
     var y = 43;
     var expectedResult = 55;
-    var result = utilities.add(12, 43);
+    var result = (0, _utilities.add)(12, 43);
     if (result !== expectedResult) {
       throw new Error('expected ' + expectedResult + ' but got ' + result);
     }
@@ -98,7 +98,7 @@ describe('utilities.js add()', function () {
     var x = -10;
     var y = -32;
     var expectedResult = -42;
-    var result = utilities.add(x, y);
+    var result = (0, _utilities.add)(x, y);
     if (result !== expectedResult) {
       throw new Error('expected ' + expectedResult + ' but got ' + result);
     }
@@ -108,7 +108,7 @@ describe('utilities.js add()', function () {
     var x = 13;
     var y = -32;
     var expectedResult = -19;
-    var result = utilities.add(x, y);
+    var result = (0, _utilities.add)(x, y);
     if (result !== expectedResult) {
       throw new Error('expected ' + expectedResult + ' but got ' + result);
     }
@@ -118,7 +118,7 @@ describe('utilities.js add()', function () {
     var x = 'a';
     var y = 12;
     var expectedResult = 'can only add numbers.';
-    var result = utilities.add(x, y);
+    var result = (0, _utilities.add)(x, y);
     if (result !== expectedResult) {
       throw new Error('expected ' + expectedResult + ' but got ' + result);
     }
