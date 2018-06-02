@@ -19,6 +19,7 @@
     "babel-preset-env": "^1.7.0",
     "koa": "^2.5.1",
     "koa-convert": "^1.2.0",
+    "koa-router": "^7.4.0",
     "live-server": "^1.2.0",
     "lodash": "^4.17.10",
     "webpack": "^4.8.3",
